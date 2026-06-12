@@ -153,6 +153,7 @@ The index produces a geographically coherent result that is robust to weighting 
 1. India through broad-spectrum exposure across all three hazards;
 2. Nigeria through extreme heat and drought;
 3. Australia through maximum values on temperature and drought.
+
 A clear regional divide separates tropical and semi-arid countries from the European sample, with Mediterranean countries forming a distinct mid-range group driven by heat and seasonal water deficit.
 
 Two counterintuitive results are worth noting:
