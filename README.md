@@ -178,15 +178,13 @@ For corporate disclosure, the key takeaway from this index is not the composite 
 ```
 ├── 01_data_assembly.ipynb          # Load CCKP files → 504-row panel CSV
 ├── 02_index_construction.ipynb     # Normalise, weight, rank → outputs + charts
-├── 03_dashboard.ipynb              # Interactive Plotly dashboard
-├── rebuild_dashboard.py            # Standalone dashboard regeneration script
 │
 ├── cckp_raw/
 │   └── exposure_panel.csv          # Assembled panel: 504 rows × 5 cols
 │
 ├── outputs/
 │   ├── exposure_index_results.csv  # Final ranked results (21 rows)
-│   ├── dashboard.html              # Interactive dashboard (standalone HTML)
+│   ├── dashboard.html              # Interactive dashboard (download to view)
 │   └── *.png                       # Six static visualisations
 │
 └── LICENSE
@@ -202,8 +200,9 @@ pip install pandas numpy matplotlib plotly openpyxl
 
 Run notebooks in order:
 1. `01_data_assembly.ipynb` — assembles `exposure_panel.csv` from raw CCKP files
-2. `02_index_construction.ipynb` — builds the index and saves all charts
-3. `03_dashboard.ipynb` or `python rebuild_dashboard.py` — generates `dashboard.html`
+2. `02_index_construction.ipynb` — builds the index and saves all charts to `outputs/`
+
+The interactive dashboard (`outputs/dashboard.html`) is included in the repository — download and open in any browser to explore the results.
 
 Raw CCKP source files (one `.xlsx` per country) can be downloaded from the [World Bank Climate Change Knowledge Portal](https://climateknowledgeportal.worldbank.org) using the ERA5 historical dataset for txx, rx5day, and cdd indicators.
 
