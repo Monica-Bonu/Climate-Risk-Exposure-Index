@@ -36,7 +36,7 @@ This project responds to that requirement. It builds a country-level physical ha
 | **TCFD Physical Risk** | Identify current physical risks to assets and operations | Country-level screening identifies high-priority geographies for deeper asset-level assessment |
 | **TCFD Physical Risk** | Consider acute and chronic hazards | Three indicators span acute events (extreme heat, extreme precipitation) and chronic hazards (drought) |
 
-This index demonstrates the **country screening stage** of a physical-risk programme — the first-pass step that identifies which geographies warrant closer attention before asset-level and scenario-based analysis is conducted.
+This index demonstrates the **country screening stage** of a physical-risk programme, the first-pass step that identifies which geographies warrant closer attention before asset-level and scenario-based analysis is conducted.
 
 ---
 
@@ -53,7 +53,7 @@ This index demonstrates the **country screening stage** of a physical-risk progr
 
 | Indicator | Hazard dimension | Units | Rationale |
 |---|---|---|---|
-| Maximum of daily maximum temperature (txx) | Heat | °C | Captures temperature extremes, not just averages — a truer heat-hazard proxy |
+| Maximum of daily maximum temperature (txx) | Heat | °C | Captures temperature extremes, not just averages, a truer heat-hazard proxy |
 | Largest 5-day cumulative precipitation (rx5day) | Flooding | mm | Maps directly to extreme rainfall and flood-generating events |
 | Maximum consecutive dry days (cdd) | Drought | days | Captures water deficit without cancelling against the precipitation indicator |
 
@@ -75,15 +75,15 @@ The sample is Europe-weighted to reflect the CSRD regulatory context. African an
 
 The index follows the **OECD/JRC Handbook on Constructing Composite Indicators** four-step process:
 
-**Step 1 — Indicator selection:** Three hazard indicators selected from CCKP ERA5 data; redundancy checked via correlation matrix before finalising the set.
+**Step 1 - Indicator selection:** Three hazard indicators selected from CCKP ERA5 data; redundancy checked via correlation matrix before finalising the set.
 
-**Step 2 — Normalisation:** Min-max rescaling of each indicator to a 0–1 range across the 21-country sample.
+**Step 2 - Normalisation:** Min-max rescaling of each indicator to a 0–1 range across the 21-country sample.
 
-$$x_{norm} = \frac{x - x_{min}}{x_{max} - x_{min}}$$
+$$x_{norm} - \frac{x - x_{min}}{x_{max} - x_{min}}$$
 
-**Step 3 — Weighting:** Equal weights (1/3 each) applied as the transparent default in the absence of empirical evidence for differential weighting.
+**Step 3 - Weighting:** Equal weights (1/3 each) applied as the transparent default in the absence of empirical evidence for differential weighting.
 
-**Step 4 — Aggregation:** Linear weighted sum to produce a composite exposure score (0 = least exposed, 1 = most exposed).
+**Step 4 - Aggregation:** Linear weighted sum to produce a composite exposure score (0 = least exposed, 1 = most exposed).
 
 $$\text{Composite Score} = \frac{1}{3} \cdot \text{Temperature}_{norm} + \frac{1}{3} \cdot \text{Precipitation}_{norm} + \frac{1}{3} \cdot \text{Drought}_{norm}$$
 
@@ -95,7 +95,7 @@ A **sensitivity analysis** across five alternative weighting schemes tests wheth
 
 ### Overall Ranking
 
-Composite scores range from 0.074 (Ireland) to 0.878 (India). The median score is 0.250, indicating a right-skewed distribution — a small group of countries at the top is substantially more exposed than the majority.
+Composite scores range from 0.074 (Ireland) to 0.878 (India). The median score is 0.250, indicating a right-skewed distribution - a small group of countries at the top is substantially more exposed than the majority.
 
 ![Composite Exposure Score Ranking](outputs/01_composite_score.png)
 
@@ -125,23 +125,23 @@ Composite scores range from 0.074 (Ireland) to 0.878 (India). The median score i
 
 ### Hazard Profile by Country
 
-The heatmap shows that high-ranking countries reach their scores through different hazard combinations — not a single shared driver.
+The heatmap shows that high-ranking countries reach their scores through different hazard combinations - not a single shared driver.
 
 ![Normalised Hazard Heatmap](outputs/02_heatmap.png)
 
 ### Hazard Driver Decomposition
 
-India is the only country to score above 0.9 on two indicators simultaneously (temperature and precipitation). Australia anchors the maximum on both temperature and drought. Nigeria's score is dominated by drought and heat. The decomposition makes clear that the same composite score can arise from very different hazard profiles — a distinction that matters for risk management.
+India is the only country to score above 0.9 on two indicators simultaneously (temperature and precipitation). Australia anchors the maximum on both temperature and drought. Nigeria's score is dominated by drought and heat. The decomposition makes clear that the same composite score can arise from very different hazard profiles, a distinction that matters for risk management.
 
 ![Driver Decomposition](outputs/03_driver_decomposition.png)
 
 ### Sensitivity Analysis
 
-The ranking was recalculated under five alternative weighting schemes. India and Nigeria hold ranks 1 and 2 under every scheme. The three-tier structure of the ranking — high-exposure tropical and semi-arid countries, mid-range Mediterranean countries, low-exposure northern European countries — is stable throughout.
+The ranking was recalculated under five alternative weighting schemes. India and Nigeria hold ranks 1 and 2 under every scheme. The three-tier structure of the ranking - high-exposure tropical and semi-arid countries, mid-range Mediterranean countries, low-exposure northern European countries - is stable throughout.
 
 ![Sensitivity Analysis](outputs/04_sensitivity_analysis.png)
 
-### Indicator Trends 2000–2023
+### Indicator Trends 2000-2023
 
 ![Indicator Trends](outputs/06_time_trends.png)
 
@@ -153,10 +153,10 @@ The index produces a geographically coherent result that is robust to weighting 
 
 Two counterintuitive results are worth noting:
 
-- **Netherlands ranks 16th** despite its global reputation for flood risk. Its flood exposure arises from sea level and river flooding — not extreme rainfall intensity — which the rx5day indicator does not capture. This points directly to the most important gap in the current indicator set.
+- **Netherlands ranks 16th** despite its global reputation for flood risk. Its flood exposure arises from sea level and river flooding, not extreme rainfall intensity, which the rx5day indicator does not capture. This points directly to the most important gap in the current indicator set.
 - **United States ranks 12th** because the index uses national averages, which mask enormous internal variation across a climatically diverse country. Sub-national analysis would produce dramatically different results for states like Florida, California, or Texas.
 
-For corporate disclosure, the key takeaway from this index is not the composite number — it is the **hazard decomposition**. Knowing that Australia's exposure is driven by heat and drought, not flooding, determines which interventions to prioritise and which TCFD risk categories to assess in depth.
+For corporate disclosure, the key takeaway from this index is not the composite number, it is the **hazard decomposition**. Knowing that Australia's exposure is driven by heat and drought, not flooding, determines which interventions to prioritise and which TCFD risk categories to assess in depth.
 
 ---
 
