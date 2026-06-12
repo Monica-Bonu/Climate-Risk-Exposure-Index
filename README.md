@@ -2,6 +2,8 @@
 
 A transparent, reproducible composite index of physical climate hazard exposure for 21 countries, built from publicly available observed data. Designed to demonstrate the physical-risk screening methodology required by **CSRD (ESRS E1)** and **TCFD**.
 
+[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/temperature001/climate-risk-exposure/data)
+
 ---
 
 ## Background
@@ -208,6 +210,8 @@ Run notebooks in order:
 2. `02_index_construction.ipynb` — builds the index and saves all charts to `outputs/`
 
 The interactive dashboard (`outputs/dashboard.html`) is included in the repository — download and open in any browser to explore the results.
+
+The processed dataset (exposure_panel.csv and exposure_index_results.csv) is also available on [Kaggle](https://www.kaggle.com/datasets/temperature001/climate-risk-exposure/data).
 
 Raw CCKP source files (one `.xlsx` per country) can be downloaded from the [World Bank Climate Change Knowledge Portal](https://climateknowledgeportal.worldbank.org) using the ERA5 historical dataset for txx, rx5day, and cdd indicators.
 
