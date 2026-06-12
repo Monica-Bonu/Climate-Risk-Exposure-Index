@@ -3,6 +3,9 @@
 *.pyc
 __pycache__/
 
+# Raw source data (re-download from World Bank CCKP)
+cckp_raw/*.xlsx
+
 # OS
 .DS_Store
 Thumbs.db
