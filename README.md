@@ -6,17 +6,17 @@ A transparent, reproducible composite index of physical climate hazard exposure 
 
 ## Background
 
-Physical climate risk is one of the most pressing challenges facing businesses, investors, and policymakers. Extreme heat, intense precipitation events, and prolonged droughts are already disrupting supply chains, damaging infrastructure, threatening agricultural output, and increasing insurance losses across the globe. As climate change intensifies, these hazards are expected to worsen — making structured, evidence-based exposure assessment an operational necessity rather than a regulatory formality.
+Physical climate risk is one of the most pressing challenges facing businesses, investors, and policymakers. Extreme heat, intense precipitation events, and prolonged droughts are already disrupting supply chains, damaging infrastructure, threatening agricultural output, and increasing insurance losses across the globe. As climate change intensifies, these hazards are expected to worsen, making structured, evidence-based exposure assessment an operational necessity rather than a regulatory formality.
 
-Regulatory frameworks have formalised this expectation. The **Corporate Sustainability Reporting Directive (CSRD)**, through its European Sustainability Reporting Standard **ESRS E1**, requires companies to identify, assess, and disclose their exposure to physical climate hazards in a systematic and auditable manner. The **Task Force on Climate-related Financial Disclosures (TCFD)** similarly requires organisations to identify physical risks affecting their assets, operations, and supply chains — both under current conditions and under forward-looking scenarios. Both frameworks share a common requirement: the methodology behind any risk assessment must be documented, transparent, and reproducible.
+Regulatory frameworks have formalised this expectation. The **Corporate Sustainability Reporting Directive (CSRD)**, through its European Sustainability Reporting Standard **ESRS E1**, requires companies to identify, assess, and disclose their exposure to physical climate hazards in a systematic and auditable manner. The **Task Force on Climate-related Financial Disclosures (TCFD)** similarly requires organisations to identify physical risks affecting their assets, operations, and supply chains, both under current conditions and under forward-looking scenarios. Both frameworks share a common requirement: the methodology behind any risk assessment must be documented, transparent, and reproducible.
 
-This project responds to that requirement. It builds a country-level physical hazard exposure index from raw, openly licensed climate data — making every methodological choice explicit and open to scrutiny.
+This project responds to that requirement. It builds a country-level physical hazard exposure index from raw, openly licensed climate data, making every methodological choice explicit.
 
 ---
 
 ## Aims and Objectives
 
-**Overall aim:** Build a transparent, reproducible index that scores and ranks countries by their exposure to physical climate hazards, demonstrating the kind of physical-risk screening that CSRD and TCFD require.
+**Overall aim:** To evaluates how physical climate risk exposure is distributed across regions, in line with TCFD and CSRD physical-risk requirements.
 
 **Specific objectives:**
 
@@ -149,7 +149,11 @@ The ranking was recalculated under five alternative weighting schemes. India and
 
 ## Conclusions
 
-The index produces a geographically coherent result that is robust to weighting assumptions. India, Nigeria, and Australia are the most exposed countries by a substantial margin, each for different reasons: India through broad-spectrum exposure across all three hazards; Nigeria through extreme heat and drought; Australia through maximum values on temperature and drought. A clear regional divide separates tropical and semi-arid countries from the European sample, with Mediterranean countries forming a distinct mid-range group driven by heat and seasonal water deficit.
+The index produces a geographically coherent result that is robust to weighting assumptions. India, Nigeria, and Australia are the most exposed countries by a substantial margin, each for different reasons:
+1. India through broad-spectrum exposure across all three hazards;
+2. Nigeria through extreme heat and drought;
+3. Australia through maximum values on temperature and drought.
+A clear regional divide separates tropical and semi-arid countries from the European sample, with Mediterranean countries forming a distinct mid-range group driven by heat and seasonal water deficit.
 
 Two counterintuitive results are worth noting:
 
