@@ -172,9 +172,9 @@ For corporate disclosure, the key takeaway from this index is not the composite 
 | Limitation | Implication |
 |---|---|
 | Country-level aggregation | Masks sub-national variation; large, diverse economies (United States, India, Brazil) require sub-national analysis |
-| Sea level excluded | Understates flood exposure for low-lying European countries (Netherlands, Belgium, Denmark, United Kingdom); highest-priority extension for v2 |
+| Sea level excluded | Understates flood exposure for low-lying European countries (Netherlands, Belgium, Denmark, United Kingdom)|
 | Historical data only | Does not satisfy the forward-looking requirement of TCFD; CMIP6 scenario extension needed |
-| Annual aggregates | Cannot capture within-year compound hazards (e.g. simultaneous heat and drought) |
+| Annual aggregates | Did not capture within-year compound hazards (e.g. simultaneous heat and drought) |
 | Temperature ↔ drought correlation (r = 0.818) | Partially double-weights the hot-and-dry hazard profile of tropical countries |
 | Min-max sensitivity | Adding or removing one extreme country shifts all normalised scores |
 
