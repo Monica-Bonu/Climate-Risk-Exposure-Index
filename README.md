@@ -1,6 +1,6 @@
 # Climate Risk Exposure Index
 
-A transparent, reproducible composite index of physical climate hazard exposure for 21 countries, built from publicly available observed data. Designed to demonstrate the physical-risk screening methodology required by **CSRD (ESRS E1)** and **TCFD**.
+A transparent, reproducible composite index of physical climate hazard exposure for 21 countries, built from publicly available observed data. Designed to demonstrate the physical-risk screening methodology required by **CSRD (ESRS E1)** and **TCFD (now integrated with ISSB sustainability disclosure standards)**.
 
 [![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/temperature001/climate-risk-exposure/data)
 
